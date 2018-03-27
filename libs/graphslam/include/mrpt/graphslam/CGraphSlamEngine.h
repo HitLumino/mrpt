@@ -222,8 +222,8 @@ class CGraphSlamEngine : public mrpt::system::COutputLogger
 	 * \param[out] graph_nodes Nodes of the graph that have been registered so
 	 * far. graph_nodes contains a map of nodeIDs to their corresponding poses.
 	 */
-	virtual void getRobotEstimatedTrajectory(
-		typename GRAPH_T::global_poses_t* graph_poses) const;
+	virtual typename GRAPH_T::global_poses_t
+		getRobotEstimatedTrajectory() const;	
 	/**\brief Return the list of nodeIDs which make up robot trajectory
 	 * \sa updateEstimatedTrajectoryVisualization
 	 */
